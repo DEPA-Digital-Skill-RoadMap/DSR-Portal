@@ -1,6 +1,6 @@
 services:
   frontend:
-    image: node:18-alpine
+    image: nginx:alpine
     container_name: dsr-portal-Frontend
     ports:
       - "8443:80"
