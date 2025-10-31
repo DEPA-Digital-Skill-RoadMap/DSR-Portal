@@ -8,6 +8,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: "0.0.0.0",
-    port: process.env.FRONT_PORT || 8443
+    port: process.env.FRONT_PORT || 80
   },
 });
