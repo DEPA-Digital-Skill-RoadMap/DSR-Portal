@@ -1,0 +1,325 @@
+/* CSS Theme เหลืองน้ำเงิน สำหรับ DataTable */
+
+/* Container หลัก */
+.dataTables_wrapper {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 2px solid #dee2e6;
+}
+
+/* DataTable main table */
+.dataTables_wrapper .dataTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid #2a5298;
+}
+
+/* Header ของตาราง */
+.dataTables_wrapper .dataTable thead {
+  background: #ffc107;
+  color: #000000;
+}
+
+.dataTables_wrapper .dataTable thead th {
+  background: #ffc107 !important;
+  color: #000000 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 15px 12px;
+  border: 2px solid #2a5298;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+}
+
+.dataTables_wrapper .dataTable thead th:hover {
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+  transform: translateY(-1px);
+  transition: all 0.3s ease;
+}
+
+/* Body ของตาราง */
+.dataTables_wrapper .dataTable tbody tr {
+  background: white;
+  transition: all 0.3s ease;
+  color: #000000;
+}
+
+.dataTables_wrapper .dataTable tbody tr:nth-child(even) {
+  background: #f8f9fa;
+  color: #000000;
+}
+
+.dataTables_wrapper .dataTable tbody tr:hover {
+  background: #fff3cd !important;
+  color: #000000;
+  transform: none;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.3);
+}
+
+.dataTables_wrapper .dataTable tbody td {
+  padding: 12px;
+  border: 1px solid #dee2e6;
+  vertical-align: middle;
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Checkbox styles */
+.dataTables_wrapper .dataTable input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #ffc107;
+  border: 2px solid #2a5298;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dataTables_wrapper .dataTable input[type="checkbox"]:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+}
+
+/* Link styles */
+.dataTables_wrapper .dataTable .btn-link {
+  background: #2a5298;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid #2a5298;
+}
+
+.dataTables_wrapper .dataTable .btn-link:hover {
+  background: #ffc107;
+  color: #000000;
+  border-color: #ffc107;
+  transform: none;
+}
+
+/* Export button */
+.dataTables_wrapper .dataTable img {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dataTables_wrapper .dataTable img:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);
+}
+
+/* Control buttons */
+.control-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #dee2e6;
+}
+
+.control-buttons strong {
+  color: #000000;
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.control-buttons button {
+  padding: 10px 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.control-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button specific colors */
+.btn-select-filtered {
+  background: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+.btn-select-filtered:hover {
+  background: #ffc107;
+  color: #000000;
+  border-color: #ffc107;
+}
+
+.btn-clear-selection {
+  background: #2a5298;
+  color: white;
+  border-color: #2a5298;
+}
+
+.btn-clear-selection:hover {
+  background: #ffc107;
+  color: #000000;
+  border-color: #ffc107;
+}
+
+.btn-download-multiple {
+  background: #6c757d;
+  color: white;
+  border-color: #6c757d;
+}
+
+.btn-download-multiple:hover {
+  background: #ffc107;
+  color: #000000;
+  border-color: #ffc107;
+}
+
+/* DataTable controls */
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter {
+  margin-bottom: 15px;
+}
+
+.dataTables_wrapper .dataTables_length select,
+.dataTables_wrapper .dataTables_filter input {
+  border: 2px solid #2a5298;
+  border-radius: 5px;
+  padding-right: 8px ;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+
+
+.dataTables_wrapper .dataTables_length label,
+.dataTables_wrapper .dataTables_filter label {
+  color: #000000;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Pagination */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  background: white;
+  border: 2px solid #2a5298;
+  color: #000000;
+  border-radius: 5px;
+  margin: 0 3px;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: #ffc107;
+  color: #000000;
+  border-color: #ffc107;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: #2a5298;
+  color: white;
+  border-color: #2a5298;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+  background: #f8f9fa;
+  color: #6c757d;
+  border-color: #dee2e6;
+  cursor: not-allowed;
+}
+
+/* Info text */
+.dataTables_wrapper .dataTables_info {
+  color: #000000;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+/* Processing indicator */
+.dataTables_wrapper .dataTables_processing {
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .dataTables_wrapper {
+    padding: 15px;
+  }
+  
+  .control-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .control-buttons button {
+    margin: 5px 0;
+  }
+  
+  .dataTables_wrapper .dataTable thead th {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+  
+  .dataTables_wrapper .dataTable tbody td {
+    padding: 8px;
+  }
+}
+
+/* Animation for row selection */
+@keyframes selectRow {
+  0% { background: white; }
+  50% { background: rgba(255, 193, 7, 0.3); }
+  100% { background: rgba(255, 193, 7, 0.1); }
+}
+
+.dataTables_wrapper .dataTable tbody tr.selected {
+  animation: selectRow 0.5s ease;
+  background: rgba(255, 193, 7, 0.1);
+  border-left: 4px solid #ffc107;
+}
+
+/* Scroll bar styling */
+.dataTables_wrapper .dataTable::-webkit-scrollbar {
+  height: 8px;
+}
+
+.dataTables_wrapper .dataTable::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.dataTables_wrapper .dataTable::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+  border-radius: 10px;
+}
+
+.dataTables_wrapper .dataTable::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #ffc107 0%, #ffb300 100%);
+}
+
+.dataTables_filter input {
+  width: 300px;
+  padding: 8px;
+  border: 2px solid #0B004F;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}

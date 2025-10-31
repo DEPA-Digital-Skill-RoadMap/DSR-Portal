@@ -1,0 +1,181 @@
+#root {
+  max-width: 5000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+@font-face {
+  font-family: 'SukhumvitSet';
+  src: url('./assets/fonts/SukhumvitSet-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: 'SukhumvitSet', sans-serif;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.card {
+  padding: 2em;
+}
+
+
+.table{
+  align-items: center;
+  max-width: 5000px;
+}
+
+/* Container สำหรับจัดเรียง 4 cards ในบรรทัดเดียว */
+.cards-container {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  min-height: 5000;
+  margin: 0; /* ไม่มี margin ด้านข้าง */
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border-radius: 0; /* มุมไม่โค้ง เพื่อชนขอบ */
+  overflow-x: auto;
+}
+
+
+/* หรือใช้ flexbox แทน */
+.cards-container-flex {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+  border: 16px;
+  
+}
+
+/* Layout สำหรับหน้าหลัก */
+.regshow-container {
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+}
+
+/* Section สำหรับตาราง */
+.table-section {
+  margin-top: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style สำหรับแต่ละ card */
+.card {
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 1;
+  min-width: 180px;
+  max-width: 260px;
+  flex-shrink: 0; /* ป้องกันไม่ให้หดตัว */
+  height: 120px; /* กำหนดความสูงคงที่ */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+/* Style สำหรับหัวข้อใน card */
+.card h2 {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.3;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style สำหรับตัวเลข/ข้อมูล */
+.card p {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+}
+
+/* สำหรับข้อความ "กำลังโหลด..." */
+.card p:contains("กำลังโหลด") {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1e40af;
+  font-style: italic;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.cardreg{
+    border-radius: 12px;
+    justify-content: center;
+    padding: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-width: 180px;
+    max-width: 300px;
+    height: 120px;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;   /* จัดตรงกลางแนวนอน */
+  align-items: center;       /* จัดตรงกลางแนวตั้ง (ถ้าต้องการ) */
+}
+
+.dataTables_filter {
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.dataTables_filter input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #888;
+  background-color: #fff;
+  width: 250px;
+  transition: border-color 0.2s ease;
+   margin-bottom: 20px;
+}
+
+.dataTables_filter input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+div.dt-container .dt-length {
+  float: right !important;
+  text-align: right !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Override ฟอนต์ของ DataTables */
+table.dataTable,
+table.dataTable th,
+table.dataTable td,
+.dataTables_wrapper,
+.dataTables_filter,
+.dataTables_length,
+.dataTables_info,
+.dataTables_paginate {
+  font-family: 'SukhumvitSet', sans-serif !important;
+}

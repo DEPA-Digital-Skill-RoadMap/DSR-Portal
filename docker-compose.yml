@@ -1,0 +1,20 @@
+services:
+  frontend:
+    build:
+      context: ./Frontend
+    ports:
+      - "8443:443"
+    volumes:
+      - ./Frontend/certificates:/etc/nginx/ssl
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./Backend
+    ports:
+      - "2095:2095"
+    env_file:
+      - ./Backend/.env
+    environment:
+      - NODE_ENV=production

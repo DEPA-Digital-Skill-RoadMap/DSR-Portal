@@ -1,0 +1,26 @@
+/* datatable-custom.css */
+
+table.dataTable {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 14px;
+}
+
+table.dataTable thead {
+  background-color: #fff200;
+  color: #000;
+}
+
+table.dataTable tbody tr:hover {
+  background-color: gray;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 5px 10px;
+  margin: 2px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+table.dataTable tbody tr.selected {
+  background-color: #d0f0d0 !important;
+}
