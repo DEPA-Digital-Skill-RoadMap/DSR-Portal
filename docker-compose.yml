@@ -13,7 +13,7 @@ services:
   backend:
     build:
       context: ./Backend
-      dockerfile: ./Backend/dockerfile
+      dockerfile: ./dockerfile
     ports:
       - "2095:2095"
     env_file:
